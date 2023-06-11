@@ -1,21 +1,6 @@
 #include <stdio.h>
-#define _USE_MATH_DEFINES // for C
-#include <math.h>
-//paint the container
-//the surface of a cylinder is: A= 2rπ(r+h)
 
 int main() {
-    double h;
-    double d;
-    double a;
-    printf("Height(m): ");
-    scanf("%lf", &h);
-    printf("Diameter(m): ");
-    scanf("%lf", &d);
-    a = 2*M_PI*(d/2)*((d/2)+h);
-    printf("The total surface area is: %f m^2 \n", a);
-    printf("%lf cans of paint are needed. \n", a/2);
-    int roundedvalue = round(a/2);
-    printf("Rounded to the closest integer: %d", roundedvalue);
-    return 0;
+   printf("\\\n \\\n  \\");
+   return 0;
 }
