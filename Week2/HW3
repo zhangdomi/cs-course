@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//quadratic equation roots
+
+int main()
+{
+    double a,b,c,x1,x2,d;
+    printf("Please give me the parameters of your quadratic equation in the form of a, b, c:\n");
+    scanf("%lf, %lf, %lf",&a, &b, &c);
+    d = b*b-4*a*c;
+    if(d >0){
+        x1=((-1*b+sqrt(b*b-4*a*c))/(2*a));
+        x2=((-1*b-sqrt(b*b-4*a*c))/(2*a));
+        printf("The roots are %lf and %lf",x1, x2);
+    }
+    else if (d ==0){
+        x1=(((-1*b) - sqrt(b*b-4*a*c))/(2*a));
+        printf("The two roots are identical: %lf",x1);
+    }
+    else{
+        printf("The equation doesn't have real roots");
+    }
+    return 0;
+}
