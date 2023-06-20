@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x;
+    int y = 1;
+    printf("How long do you want the line to be:\n");
+    scanf("%d", &x);
+    printf("+");
+    while (y<=x){
+        printf("-");
+        y= y+1;
+    }
+    printf("+");
+    return 0;
+}
