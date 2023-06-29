@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double sum = 0;
+    double fact =1;
+    double term;
+    for (term = 1; term <= 19; term = term + 1){
+        sum = sum + 1/fact;
+        fact = fact*term;
+    }
+    printf("The Euler number approximated with %lf terms is: %lf", term, sum);
+    return 0;
+}
