@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sum = 0;
+    int divisor, number;
+    printf("Enter your number: ");
+    scanf("%d", &number);
+    for(divisor = 1; divisor <= number/2; divisor = divisor + 1){
+        if(number %divisor == 0)
+            sum = sum + divisor;
+    }
+    printf("The sum of the divisors is %d\n", sum);
+    if(sum == number)
+        printf("The number is a perfect number");
+    else
+        printf("The number is not a perfect number");
+    return 0;
+}
