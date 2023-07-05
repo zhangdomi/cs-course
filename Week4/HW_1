@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double cube(double n){
+    double n_cube = 1;
+    n_cube = n*n*n;
+    return n_cube;
+}
+double absolute(double n){
+    if (n<0)
+        n= -n;
+    else
+        n=n;
+    return n;
+}
+double f_sin(double n){
+    double sin_value;
+    sin_value = sin(n);
+    return sin_value;
+}
+
+
+int main()
+{
+    for(double i = -1; i < 1; i = i + 0.1){
+        printf("%.4f\t %.4f\t %.4f\t %.4f\t", i, cube(i), absolute(i), f_sin(i));
+    }
+    return 0;
+}
