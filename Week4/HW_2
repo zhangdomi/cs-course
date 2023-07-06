@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+
+bool vowel(char a){
+    bool v;
+    if (a == 'a' || a=='e'|| a=='i'|| a=='u' || a=='o'){
+        v = true;
+    }
+    else
+        v = false;
+    return v;
+}
+
+int main()
+{
+    char x;
+    printf("Enter your letter: ");
+    scanf("%c", &x);
+    if(vowel(x) == true){
+        printf("The letter is a vowel");
+    }
+    else
+        printf("The letter is a consonant");
+    return 0;
+}
