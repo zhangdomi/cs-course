@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int add(int a){
+    int ret;
+    ret = a + 1;
+    return ret;
+}
+
+int neg(int a){
+    int ret;
+    ret = -a;
+    return ret;
+}
+
+int mltp(int a){
+    int ret;
+    ret = a*2;
+    return ret;
+}
+
+int main()
+{
+    int x,n;
+    printf("What's your number?: ");
+    scanf("%d", &x);
+    do{
+    printf("0. Restore the initial value (n=1)\n"
+           "1. Add 1\n"
+           "2. Negate the number (+/-)\n"
+           "3. Multiple by 2 \n"
+           "9. Exit \n");
+    scanf("%d", &n);
+    switch(n){
+        case(0): x= 1; break;
+        case(1): x= add(x); break;
+        case(2): x= neg(x); break;
+        case(3): x= mltp(x); break;
+        case(9): break;
+        default:
+            break;
+    }
+    printf("%d", x);
+    } while (n !=9);
+    return 0;
+}
