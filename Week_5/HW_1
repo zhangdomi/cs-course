@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int w, h;
+    printf("Enter the width and height of your rectangle: \n");
+    scanf("%d, %d", &w, &h);
+    printf("*");
+    for(int a=0; a<w; a++){
+        printf("-");
+    }
+    printf("*\n");
+    for (int i=1; i<(h-1); i++){
+        printf("|");
+        for(int j=0; j<w; j++){
+            printf(".");
+        }
+        printf("|\n");
+    }
+    printf("*");
+    for(int b=0; b<w; b++){
+        printf("-");
+    }
+    printf("*");
+    return 0;
+}
