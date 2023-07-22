@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int data[5]={-1, 2, 3, -4, -7};
+    int data_2[5];
+    int n =0;
+    for(int i=0; i<5; i++){
+            if(data[i]>0){
+                data_2[n]=data[i];
+                n +=1;
+            }
+    }
+    printf("%d", n);
+    return 0;
+}
