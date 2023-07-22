@@ -24,7 +24,7 @@ double f_sin(double n){
 int main()
 {
     for(double i = -1; i < 1; i = i + 0.1){
-        printf("%.4f\t %.4f\t %.4f\t %.4f\t", i, cube(i), absolute(i), f_sin(i));
+        printf("%.4f %.4f %.4f %.4f\n", i, cube(i), absolute(i), f_sin(i));
     }
     return 0;
 }
