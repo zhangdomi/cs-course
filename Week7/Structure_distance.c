@@ -4,7 +4,7 @@
 
 typedef struct{
         double x; double y;
-    1}vector;
+    }vector;
 
     vector v_difference(vector a, vector b){
         vector c;
